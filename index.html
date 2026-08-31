@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grill BD — Flame Fast Food | Dhaka</title>
+    <meta
+      name="description"
+      content="Grill BD is a dark, flame-kissed fast food kitchen from Dhaka. Smash burgers, naga wings, wraps, and late-night heat across Bangladesh."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="logo" href="#top">
+        <span class="logo-mark">GB</span>
+        Grill <em>BD</em>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our fire</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="btn btn-ghost" type="button" data-open-order>Order now</button>
+      <button class="nav-toggle" type="button" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" hidden>
+      <a href="#menu">Menu</a>
+      <a href="#story">Our fire</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <button class="btn btn-primary" type="button" data-open-order>Order now</button>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          class="hero-img"
+          src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=80"
+          alt="Charred smash burger with melted cheese and pickles"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Dhaka · Banani · Dhanmondi · Chattogram</p>
+          <h1>Heat. Smash.<br />Midnight hunger.</h1>
+          <p class="lede">
+            Grill BD is Bangladesh’s late-night flame kitchen — naga heat, ghee-gloss
+            burgers, and fries that refuse to behave.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">See the grill</a>
+            <button class="btn btn-ghost" type="button" data-open-order>
+              Order for ৳0 delivery in Banani
+            </button>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>12 min</dt>
+              <dd>avg pickup</dd>
+            </div>
+            <div>
+              <dt>৳249</dt>
+              <dd>lunch smash</dd>
+            </div>
+            <div>
+              <dt>4.9</dt>
+              <dd>from 2.1k plates</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="menu" id="menu">
+        <div class="section-head">
+          <p class="eyebrow">The board</p>
+          <h2>What hits the grill tonight</h2>
+          <p>Filter, tap a plate, stack a bag. Prices in Bangladeshi Taka.</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Menu categories">
+          <button class="filter is-active" data-filter="all" type="button">All fire</button>
+          <button class="filter" data-filter="burgers" type="button">Burgers</button>
+          <button class="filter" data-filter="chicken" type="button">Chicken</button>
+          <button class="filter" data-filter="wraps" type="button">Wraps</button>
+          <button class="filter" data-filter="sides" type="button">Sides</button>
+          <button class="filter" data-filter="drinks" type="button">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid"></div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-card">
+          <p class="eyebrow">Born on Satmasjid Road</p>
+          <h2>A Dhaka grill with a naga temper.</h2>
+          <p>
+            We started as a midnight cart, then a Banani hole-in-the-wall, now a
+            three-city flame line. Beef from local butchers, chicken marinated in
+            mustard oil and dried naga, buns toasted in ghee. No beige fast food.
+          </p>
+          <ul>
+            <li>Halal kitchen, open until 2:00 AM on Fridays</li>
+            <li>bKash, Nagad, and card — no awkward cash scramble</li>
+            <li>Spice from mild to “call the fan”</li>
+          </ul>
+        </div>
+        <figure class="story-visual">
+          <img
+            src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=1200&q=80"
+            alt="Crispy fried chicken pieces on a dark tray"
+          />
+          <figcaption>Naga wings · extra toss on request</figcaption>
+        </figure>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section-head">
+          <p class="eyebrow">From the city</p>
+          <h2>Plates people talk about</h2>
+        </div>
+        <div class="slider">
+          <button class="slider-nav prev" type="button" aria-label="Previous review">‹</button>
+          <div class="slider-track" id="review-track"></div>
+          <button class="slider-nav next" type="button" aria-label="Next review">›</button>
+        </div>
+        <div class="slider-dots" id="review-dots"></div>
+      </section>
+
+      <section class="cta" id="order">
+        <h2>Hungry in Bangladesh? We’ll meet you halfway.</h2>
+        <p>Pickup in 12 minutes. Pathao Food &amp; Foodpanda listed as <strong>Grill BD</strong>.</p>
+        <button class="btn btn-primary" type="button" data-open-order>Start an order</button>
+      </section>
+    </main>
+
+    <footer class="footer" id="visit">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="#top">
+            <span class="logo-mark">GB</span>
+            Grill <em>BD</em>
+          </a>
+          <p class="footer-blurb">
+            Flame fast food from Dhaka, built for Bangladesh nights.
+          </p>
+        </div>
+        <div>
+          <h3>Kitchens</h3>
+          <p>House 42, Road 11, Banani, Dhaka</p>
+          <p>Satmasjid Road, Dhanmondi 27</p>
+          <p>GEC Circle, Chattogram</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Sun–Thu · 12:00–00:30</p>
+          <p>Fri–Sat · 12:00–02:00</p>
+          <p>Hotline · +880 1711-445-990</p>
+        </div>
+        <div>
+          <h3>Pay &amp; follow</h3>
+          <p>bKash · Nagad · Visa · Mastercard</p>
+          <p>
+            <a href="#">Instagram</a> · <a href="#">Facebook</a> ·
+            <a href="#">TikTok</a>
+          </p>
+        </div>
+      </div>
+      <p class="legal">© 2026 Grill BD. Made in Bangladesh. All rights reserved.</p>
+    </footer>
+
+    <aside class="drawer" id="order-drawer" hidden>
+      <div class="drawer-panel">
+        <header>
+          <h2>Your bag</h2>
+          <button type="button" class="icon-close" data-close-order aria-label="Close">×</button>
+        </header>
+        <ul class="bag" id="bag-list"></ul>
+        <p class="bag-empty" id="bag-empty">Nothing grilled yet. Tap a plate.</p>
+        <footer>
+          <div class="bag-total">
+            <span>Total</span>
+            <strong id="bag-total">৳0</strong>
+          </div>
+          <button class="btn btn-primary" type="button" id="checkout-btn">
+            Checkout on counter
+          </button>
+        </footer>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
